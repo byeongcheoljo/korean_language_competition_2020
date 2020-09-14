@@ -1,5 +1,8 @@
 ## korean_language_competition_2020
 
+### ★★ pip install -r requirements.txt ★★★
+
+
 #### data 폴더 --> (train, dev, test) 데이터 
 
 
