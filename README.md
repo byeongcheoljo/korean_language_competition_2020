@@ -28,6 +28,10 @@
     ./data/train.tsv, ./data/dev.tsv, ./data/test.tsv 파일 생성 --> resultFile
     
 
+
+#### 국립국어원 모두의 말뭉치 전처리 (국립국어원 신문 말뭉치(버전1.0), 국립국어원 웹 말뭉치(버전 1.0)사용)
+    실행 코드: modu_convert.ipynb 
+
 ### language_model.py
 os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기 
 #### 실행방법 : python run_language_modeling.py
@@ -63,23 +67,22 @@ os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 
     --tokenizer_name monologg/kobert
                  
 ### run_bert.py ==> 1)BERT 실행 2)korElectra
-os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기
-                 --model_name_or_path modelName
-                 --task_name SST-2
-                 --do_train
-                 --do_eval
-                 --data_dir ./data
-                 --max_seq_length 256
-                 --per_device_eval_batch_size=32
-                 --per_device_train_batch_size=32
-                 --learning_rate 3e-5
-                 --num_train_epochs 4.0
-                 --output_dir ./run_glue_result/modelName
-                 --do_predict
-                 --save_steps 59460
+##### os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기  
+    --model_name_or_path modelName  
+    --task_name SST-2  
+    --do_train  
+    --do_eval  
+    --data_dir ./data  
+    --max_seq_length 256  
+    --per_device_eval_batch_size=32  
+    --per_device_train_batch_size=32  
+    --learning_rate 3e-5  
+    --num_train_epochs 4.0  
+    --output_dir ./run_glue_result/modelName  
+    --do_predict  
+    --save_steps 59460  
                  
-                 
-                 
+                                 
 #### References:  
 https://github.com/huggingface/pytorch-transformers  
 https://github.com/e9t/nsmc  
