@@ -20,6 +20,7 @@
 
 ### train_dev_test_dataSplit_data_preprocessing.py
 #### 실행 방법: python train_dev_test_dataSplit_data_preprocessing.py
+    크롤링으로 watcha 데이터를 수집하면 "./nsmc/watcha_review_concat.xlsx" 경로에 저장하거나 코드 수정 
     nsmc데이터와 watcha데이터를 합친 후 전처리(정제)
     
     랜덤하게 데이터를 shuffle 후 train, dev, test 데이터로 분리
