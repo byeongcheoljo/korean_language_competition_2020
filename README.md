@@ -20,3 +20,50 @@
     
     ./data/train.tsv, ./data/dev.tsv, ./data/test.tsv 파일 생성 --> resultFile
     
+
+### language_model.py
+#### 실행방법 : python run_language_modeling.py
+                --model_name_or_path model_name
+                --do_train
+                --train_data_file = inputFile.txt
+                --mlm
+                --line_by_line
+                --output_dir outPutDir
+                --tokenizer_name tokenizerName
+                --num_train_epochs = 4
+                --logging_steps 500
+                --save_steps 27985
+
+
+
+### run_Kobert.py ==> KoBert 실행
+#### 실행 방법 : python run_Kobert.py 
+                 --model_name_or_path monologg/kobert
+                 --task_name SST-2
+                 --do_train
+                 --do_eval
+                 --data_dir ./data
+                 --max_seq_length 256
+                 --per_device_eval_batch_size=32
+                 --per_device_train_batch_size=32
+                 --learning_rate 3e-5
+                 --num_train_epochs 4.0
+                 --output_dir ./run_glue_result/kobert
+                 --do_predict
+                 --save_steps 59460
+                 --tokenizer_name monologg/kobert
+                 
+### run_bert.py ==> 1)BERT 실행 2)korElectra
+                 --model_name_or_path modelName
+                 --task_name SST-2
+                 --do_train
+                 --do_eval
+                 --data_dir ./data
+                 --max_seq_length 256
+                 --per_device_eval_batch_size=32
+                 --per_device_train_batch_size=32
+                 --learning_rate 3e-5
+                 --num_train_epochs 4.0
+                 --output_dir ./run_glue_result/modelName
+                 --do_predict
+                 --save_steps 59460
