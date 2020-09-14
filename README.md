@@ -70,7 +70,7 @@
     --save_steps 59460
     --tokenizer_name monologg/kobert
                  
-### run_bert.py ==> 1)BERT 실행 2)korElectra
+### run_bert.py ==> 1)BERT 실행 2)koElectra
  
     --model_name_or_path modelName  
     --task_name SST-2  
