@@ -3,7 +3,7 @@
 ### ★★ pip install -r requirements.txt ★★
 
 
-### data 폴더 - (train, dev, test)저작권 문제로 인해 샘플 데이터만 업로드
+### data 폴더 - (train, dev, test)
 
 
 ###  크롤링 - watcha_link_list.py  
