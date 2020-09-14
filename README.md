@@ -86,8 +86,16 @@
     --output_dir ./run_glue_result/modelName  
     --do_predict  
     --save_steps 59460  
-                 
-                                 
+    
+    
+### run_glue_result 폴더 : 자체 실험을 통한 각 모델들 결과파일 입니다.
+    run_glue_result/kobert : kobert
+    run_glue_result/kobert_languagemodel : kobert language model fine-tuning
+    run_glue_result/koelectra_base_discriminator : koelectra
+    run_glue_result/koelectra_languagemodel : koelectra language model fine-tuning
+    run/glue_result/sentiment_bert_base_multilingual : BERT
+    
+    
 #### References:  
 https://github.com/huggingface/pytorch-transformers  
 https://github.com/e9t/nsmc  
