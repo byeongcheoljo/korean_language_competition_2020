@@ -3,7 +3,7 @@
 ### ★★ pip install -r requirements.txt ★★★
 
 
-#### data 폴더 --> (train, dev, test) 데이터 
+#### data 폴더 --> (train, dev, test)샘플 데이터  
 
 
 ### watcha_link_list.py
