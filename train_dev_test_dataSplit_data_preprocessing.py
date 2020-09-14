@@ -28,7 +28,6 @@ def clean(x):
 
 
 random.seed(42)
-file_name = sys.argv[1]
 
 naver_data = pd.read_csv("nsmc/ratings.txt", sep="\t")
 naver_doc = naver_data['document'].values
@@ -36,7 +35,7 @@ naver_rating  = naver_data['label'].values
 print(naver_rating)
 
 
-file_name = sys.argv[1]
+file_name = "./nsmc/watcha_review_concat.xlsx"
 read_file = pd.read_excel(file_name)
 read_file = read_file.dropna(axis=0)
 
@@ -90,7 +89,7 @@ dev_file = result_list[int(len(result_list)*0.9*0.8):int(len(result_list)*0.9)]
 test_file = result_list[int(len(result_list)*0.9):]
 
 def save_tsv(file, file_name):
-    with open('./sentiment_tsv_data/'+str(file_name)+'3.tsv', 'w') as out_file:
+    with open('./data/'+str(file_name)+'3.tsv', 'w') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
         tsv_writer.writerow(['index','sentence','label'])
         for index,file_split in enumerate(file):
@@ -108,7 +107,7 @@ save_tsv(test_file, "test")
 
 def resave(file,file_name):
     cnt  = 1
-    with open('./sentiment_tsv_data/'+(file), 'w') as out_file:
+    with open('./data/'+(file), 'w') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
         for ln in open(file_name):
             try:
@@ -119,13 +118,13 @@ def resave(file,file_name):
             except:
                 pass
 
-resave("train.tsv","./sentiment_tsv_data/train3.tsv")
-resave("dev.tsv","./sentiment_tsv_data/dev3.tsv")
-resave("test2.tsv","./sentiment_tsv_data/test3.tsv")
+resave("train.tsv","./data/train3.tsv")
+resave("dev.tsv","./data/dev3.tsv")
+resave("test2.tsv","./data/test3.tsv")
 
 def testDataResave(file,file_name):
     cnt  = 1
-    with open('./sentiment_tsv_data/'+(file), 'w') as out_file:
+    with open('./data/'+(file), 'w') as out_file:
         tsv_writer = csv.writer(out_file, delimiter='\t')
         for ln in open(file_name):
             try:
@@ -134,4 +133,4 @@ def testDataResave(file,file_name):
                 tsv_writer.writerow([line[0], line[1]])
             except:
                 pass
-testDataResave("test2.tsv","./sentiment_tsv_data/test3.tsv")
+testDataResave("test2.tsv","./data/test3.tsv")
