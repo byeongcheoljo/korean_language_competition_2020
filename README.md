@@ -31,11 +31,13 @@
 #### 실행방법: python preprocessing.py fileName 
 #### outputFile : fileName.preprocessing.tsv
 
+
 #### 국립국어원 모두의 말뭉치 전처리 (국립국어원 신문 말뭉치(버전1.0), 국립국어원 웹 말뭉치(버전 1.0)사용)
     실행 코드: modu_convert.ipynb 
 
+
 ### language_model.py
-os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기 
+
 #### 실행방법 : python run_language_modeling.py
     --model_name_or_path model_name
     --do_train
@@ -51,7 +53,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 
 
 
 ### run_Kobert.py ==> KoBert 실행
-os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기
+
 #### 실행 방법 : python run_Kobert.py 
     --model_name_or_path monologg/kobert
     --task_name SST-2
@@ -69,7 +71,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 
     --tokenizer_name monologg/kobert
                  
 ### run_bert.py ==> 1)BERT 실행 2)korElectra
-##### os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 GPU를 사용할 것인지 변경하기  
+ 
     --model_name_or_path modelName  
     --task_name SST-2  
     --do_train  
