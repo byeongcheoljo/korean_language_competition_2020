@@ -6,12 +6,13 @@
 ### data 폴더 - (train, dev, test)저작권 문제로 인해 샘플 데이터만 업로드
 
 
-###  크롤링 - watcha_link_list.py
-#### python watcha_link_list.py 실행
-#### 왓챠 ID와 Password 입력    
+###  크롤링 - watcha_link_list.py  
+#### 실행방법: python watcha_link_list.py   
+#### 왓챠 회원가입 후 ID와 Password 입력    
     watcha_email = "id"
     
     password = 'password'
+    
 #### Chrome Web Driver 다운 
     chrome://version/ 여기에 접속 후 Chrome version 확인
     https://sites.google.com/a/chromium.org/chromedriver/downloads 크롬과 동일한 버전 download 
