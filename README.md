@@ -17,17 +17,19 @@
     https://sites.google.com/a/chromium.org/chromedriver/downloads 크롬과 동일한 버전 download 
     driver = webdriver.Chrome("chromedriver_win32/chromedriver") --> 코드에 경로 적용
 
-
 ### 데이터 전처리 및 분리 - train_dev_test_dataSplit_data_preprocessing.py
 #### 실행 방법: python train_dev_test_dataSplit_data_preprocessing.py
     크롤링으로 watcha 데이터를 수집하면 "./nsmc/watcha_review_concat.xlsx" 경로에 저장하거나 코드 수정 
+
     nsmc데이터와 watcha데이터를 합친 후 전처리(정제)
     
     랜덤하게 데이터를 shuffle 후 train, dev, test 데이터로 분리
     
     ./data/train.tsv, ./data/dev.tsv, ./data/test.tsv 파일 생성 --> resultFile
     
-
+## ★데이터 전처리 및 분리 과정을 통해 실험을 진행하였지만, 대회측에서는 preprocessing.py을 통해 전처리 과정을 해주시길 바랍니다.★
+#### 실행방법: python preprocessing.py fileName 
+#### outputFile : fileName.preprocessing.tsv
 
 #### 국립국어원 모두의 말뭉치 전처리 (국립국어원 신문 말뭉치(버전1.0), 국립국어원 웹 말뭉치(버전 1.0)사용)
     실행 코드: modu_convert.ipynb 
