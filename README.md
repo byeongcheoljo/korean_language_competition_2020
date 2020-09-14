@@ -15,7 +15,7 @@
 #### Chrome Web Driver 다운 
     chrome://version/ 여기에 접속 후 Chrome version 확인
     https://sites.google.com/a/chromium.org/chromedriver/downloads 크롬과 동일한 버전 download 
-    driver = webdriver.Chrome("D:/다운로드/chromedriver_win32/chromedriver") --> 코드에 적용
+    driver = webdriver.Chrome("chromedriver_win32/chromedriver") --> 코드에 경로 적용
 
 
 ### 데이터 전처리 및 분리 - train_dev_test_dataSplit_data_preprocessing.py
