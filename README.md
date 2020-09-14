@@ -88,12 +88,12 @@
     --save_steps 59460  
     
     
-### run_glue_result 폴더 : 자체 실험을 통한 각 모델들 결과파일 입니다.
-    run_glue_result/kobert : kobert
-    run_glue_result/kobert_languagemodel : kobert language model fine-tuning
-    run_glue_result/koelectra_base_discriminator : koelectra
-    run_glue_result/koelectra_languagemodel : koelectra language model fine-tuning
-    run/glue_result/sentiment_bert_base_multilingual : BERT
+### run_glue_result 폴더 : 자체 실험을 통한 각 모델들 결과 폴더 입니다.
+    run_glue_result/kobert/test_results_sst-2.txt : kobert
+    run_glue_result/kobert_languagemodel/test_results_sst-2.txt : kobert language model fine-tuning
+    run_glue_result/koelectra_base_discriminator/test_results_sst-2.txt : koelectra
+    run_glue_result/koelectra_languagemodel/test_results_sst-2.txt : koelectra language model fine-tuning
+    run/glue_result/sentiment_bert_base_multilingual/test_results_sst-2.txt : BERT
     
     
 #### References:  
