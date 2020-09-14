@@ -1,5 +1,8 @@
 ## korean_language_competition_2020
 
+### data 폴더 --> (train, dev, test) 데이터 
+
+
 ### watcha_link_list.py
 #### python watcha_link_list.py 실행
 #### 왓챠 ID와 Password 입력    
