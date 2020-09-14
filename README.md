@@ -77,3 +77,13 @@ os.environ["CUDA_VISIBLE_DEVICES"] ='2' --> 2번째 GPU를 사용 --> 몇번째 
                  --output_dir ./run_glue_result/modelName
                  --do_predict
                  --save_steps 59460
+                 
+                 
+                 
+#### References:  
+https://github.com/huggingface/pytorch-transformers  
+https://github.com/e9t/nsmc  
+https://github.com/monologg/KoELECTRA  
+https://github.com/SKTBrain/KoBERT  
+https://pedia.watcha.com/ko-KR/
+
