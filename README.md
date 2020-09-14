@@ -1,6 +1,6 @@
 ## korean_language_competition_2020
 
-### data 폴더 --> (train, dev, test) 데이터 
+#### data 폴더 --> (train, dev, test) 데이터 
 
 
 ### watcha_link_list.py
