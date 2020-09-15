@@ -96,6 +96,9 @@
     run/glue_result/sentiment_bert_base_multilingual/test_results_sst-2.txt : BERT
     
     
+### sentiment_result_combination.py
+    run_glue_result 폴더 결과들을 불러들여와 단일 모델 및 앙상블 모델 결합 후 결과를 출력하는 파일입니다.
+    
 #### References:  
 https://github.com/huggingface/pytorch-transformers  
 https://github.com/e9t/nsmc  
