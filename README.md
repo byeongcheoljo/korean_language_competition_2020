@@ -2,8 +2,8 @@
 
 ### ★ 학습 된 모델을 테스트할 시 Docker를 사용해주세요. docker폴더에 들어가 README를 참고해주세요.★  
 
-
-#### ※ 학습 방법은 아래를 참고해주세요.
+<br></br><br></br>
+#### ※ 학습 방법은 아래를 참고해주세요.  
 ### pip install -r requirements.txt 
 
 ### data 폴더 - (train, dev, test)
