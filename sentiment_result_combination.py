@@ -49,7 +49,7 @@ result_index = [0,1,2,3,4,5]
 # result_index = [0,1,2]
 result_dir = './run_glue_result/'
 file_result_list = [result_dir+'kobert/test_results_sst-2.txt',result_dir+'koelectra_base_discriminator/test_results_sst-2.txt',result_dir+'sentiment_bert_base_multilingual/test_results_sst-2.txt',
-result_dir+"koelectra_languagemodel/test_results_sst-2.txt", result_dir+"kobert_languagemodel_news_review/test_results_sst-2.txt", result_dir+"bert_multilingual_lm/test_results_sst-2.txt"]
+result_dir+"koelectra_languagemodel/test_results_sst-2.txt", result_dir+"kobert_languagemodel/test_results_sst-2.txt", result_dir+"bert_multilingual_lm/test_results_sst-2.txt"]
 total_combi = []
 for i in range(len(result_index)):
     combi = combinations(result_index, i+1)
